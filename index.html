@@ -5,47 +5,48 @@
     <title>
         KOI Legion Racing - Escudería Oficial de F1
     </title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>KOI Legion Racing</h1>
+<header class="cabecera">
     <a href="index.html">
-        <img src="assets/img/logo.webp" alt="Logo de KOI Legion Racing">
+        <img class="cabecera__logo" src="assets/img/logo.webp" alt="Logo de KOI Legion Racing">
     </a>
-    <nav>
-        <ul>
+    <h1 class="cabecera__titulo">KOI Legion Racing</h1>
+    <nav class="cabecera__nav">
+        <ul class="cabecera__menu">
             <li>
-                <a href="index.html">Inicio</a>
+                <a class="cabecera__menu__opcion" href="index.html">Inicio</a>
             </li>
             <li>
-                <a href="el-coche.html">El Coche</a>
+                <a class="cabecera__menu__opcion" href="el-coche.html">El Coche</a>
             </li>
             <li>
-                <a href="el-equipo.html">Equipo</a>
+                <a class="cabecera__menu__opcion" href="el-equipo.html">Equipo</a>
             </li>
             <li>
-                <a href="noticias.html">Noticias</a>
+                <a class="cabecera__menu__opcion" href="noticias.html">Noticias</a>
             </li>
             <li>
-                <a href="patrocinio.html">Patrocinio</a>
+                <a class="cabecera__menu__opcion" href="patrocinio.html">Patrocinio</a>
             </li>
             <li>
-                <a href="calendario.html">Calendario</a>
+                <a class="cabecera__menu__opcion" href="calendario.html">Calendario</a>
             </li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section>
-        <h2>
-            PRÓXIMA CARRERA
+<main class="cuerpo">
+    <section class="cuerpo__seccion1">
+        <h2 class="cuerpo__seccion1__titulo">
+            <a class="cuerpo__seccion1__titulo__enlace" href="calendario.html">PRÓXIMA CARRERA</a>
         </h2>
-        <h3>Circuito de Montecarlo</h3>
-        <p>
+        <h3 class="cuerpo__seccion1__subtitulo">Circuito de Montecarlo</h3>
+        <p class="cuerpo__fecha">
             <time datetime="2025-11-27">27 DE NOVIEMBRE</time>
         </p>
-        <figure>
+        <figure class="cuerpo__seccion1__contenido">
             <img src="assets/img/monaco.webp" alt="Vista aérea del Circuito de Montecarlo">
             <figcaption>
                 <p>El icónico Circuito de Montecarlo será la sede de la próxima carrera.</p>
@@ -55,16 +56,16 @@
             </figcaption>
         </figure>
     </section>
-    <section>
-        <h2>
+    <section class="cuerpo__sección2">
+        <h2 class="cuerpo__seccion2__titulo">
             ÚLTIMAS NOTICIAS
         </h2>
-        <article>
-            <h3>"La afición es nuestro motor": declaraciones del piloto</h3>
-            <figure>
+        <article class="cuerpo__seccion2__noticia">
+            <h3 class="cuerpo__seccion2__subtitulo">"La afición es nuestro motor": declaraciones del piloto</h3>
+            <figure class="cuerpo__seccion2__contenido">
                 <img src="assets/img/fans_noticia.webp" alt="El piloto agradeciendo a los fans en Silverstone">
                 <p>
-                    <time datetime="2025-10-21">21 de Octubre</time>
+                    <time class="cuerpo__fecha" datetime="2025-10-21">21 de Octubre</time>
                 </p>
                 <figcaption>
                     <p>El piloto principal agradece a los fans tras el éxito en Silverstone.</p>
@@ -77,13 +78,14 @@
                     </p>
                 </figcaption>
             </figure>
+            <a href="#" class="boton-noticia">Leer más</a>
         </article>
-        <article>
-            <h3>El equipo anuncia mejoras clave para el coche</h3>
-            <figure>
+        <article class="cuerpo__seccion2__noticia">
+            <h3 class="cuerpo__seccion2__subtitulo">El equipo anuncia mejoras clave para el coche</h3>
+            <figure class="cuerpo__seccion2__contenido">
                 <img src="assets/img/mejoras_coche.webp" alt="Ingenieros trabajando en mejoras del coche">
                 <p>
-                    <time datetime="2025-10-19">19 de Octubre</time>
+                    <time class="cuerpo__fecha" datetime="2025-10-19">19 de Octubre</time>
                 </p>
                 <figcaption>
                     <p>El departamento de ingeniería trabaja en nuevas mejoras aerodinámicas.</p>
@@ -96,14 +98,15 @@
                     </p>
                 </figcaption>
             </figure>
+            <a href="#" class="boton-noticia">Leer más</a>
         </article>
-        <article>
-            <h3>Victoria en el Circuito de Silverstone</h3>
-            <p>
-                <time datetime="2025-10-15">15 de Octubre</time>
-            </p>
-            <figure>
+        <article class="cuerpo__seccion2__noticia">
+            <h3 class="cuerpo__seccion2__subtitulo">Victoria en el Circuito de Silverstone</h3>
+            <figure class="cuerpo__seccion2__contenido">
                 <img src="assets/img/silverstone_noticia.webp" alt="El coche en la pista de Silverstone">
+                <p>
+                    <time class="cuerpo__fecha" datetime="2025-10-15">15 de Octubre</time>
+                </p>
                 <figcaption>
                     <p>El equipo celebra un tercer puesto en el desafiante Circuito de Silverstone.</p>
                     <p>
@@ -115,13 +118,14 @@
                     </p>
                 </figcaption>
             </figure>
+            <a href="#" class="boton-noticia">Leer más</a>
         </article>
     </section>
-    <section>
-        <h2>
+    <section class="cuerpo__seccion3">
+        <h2 class="cuerpo__seccion3__titulo">
             NUESTROS PILOTOS
         </h2>
-        <figure>
+        <figure class="cuerpo__seccion3__contenido1">
             <img src="assets/img/piloto1.webp" alt="Lucas Fernández">
             <figcaption>
                 <h3>Lucas Fernández</h3>
@@ -129,7 +133,7 @@
                     presión.</p>
             </figcaption>
         </figure>
-        <figure>
+        <figure class="cuerpo__seccion3__contenido2">
             <img src="assets/img/piloto2.webp" alt="Emma Johnson">
             <figcaption>
                 <h3>Emma Johnson</h3>
@@ -138,32 +142,32 @@
         </figure>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <section>
-        <h4>KOI Legion Racing</h4>
+        <h4 class="footer__titulo">KOI Legion Racing</h4>
         <p>© KOI Legion Racing.</p>
     </section>
     <section>
-        <h4>Enlaces útiles</h4>
+        <h4 class="footer__titulo">Enlaces útiles</h4>
         <ul>
-            <li><a href="terminos.html">Términos y Condiciones</a></li>
-            <li><a href="privacidad.html">Política de Privacidad</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a class="footer__enlace" href="terminos.html">Términos y Condiciones</a></li>
+            <li><a class="footer__enlace" href="privacidad.html">Política de Privacidad</a></li>
+            <li><a class="footer__enlace" href="contacto.html">Contacto</a></li>
+            <li><a class="footer__enlace" href="faq.html">Preguntas Frecuentes</a></li>
         </ul>
     </section>
     <section>
-        <h4>Síguenos</h4>
+        <h4 class="footer__titulo">Síguenos</h4>
         <ul>
-            <li><a href="https://facebook.com/KOILegionRacing">Facebook</a></li>
-            <li><a href="https://twitter.com/KOILegionRacing">Twitter</a></li>
-            <li><a href="https://instagram.com/KOILegionRacing">Instagram</a></li>
-            <li><a href="https://youtube.com/KOILegionRacing">YouTube</a></li>
+            <li><a class="footer__enlace" href="https://facebook.com/KOILegionRacing">Facebook</a></li>
+            <li><a class="footer__enlace" href="https://twitter.com/KOILegionRacing">Twitter</a></li>
+            <li><a class="footer__enlace" href="https://instagram.com/KOILegionRacing">Instagram</a></li>
+            <li><a class="footer__enlace" href="https://youtube.com/KOILegionRacing">YouTube</a></li>
         </ul>
     </section>
     <section>
-        <h4>Contacto</h4>
-        <p>Email: <a href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
+        <h4 class="footer__titulo">Contacto</h4>
+        <p>Email: <a class="footer__enlace" href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
         <p>Teléfono: +34 123 456 789</p>
     </section>
 </footer>
