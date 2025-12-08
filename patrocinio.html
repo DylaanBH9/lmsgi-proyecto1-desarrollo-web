@@ -11,36 +11,26 @@
     <a href="index.html">
         <img class="cabecera__logo" src="assets/img/logo.webp" alt="Logo de KOI Legion Racing">
     </a>
-    <h1>KOI Legion Racing</h1>
+    <div class="cabecera__titulo">
+        <!-- Agrupé el título y subtítulo visualmente con clases existentes o nuevas si fuera necesario, pero mantengo estructura -->
+        <h1>KOI Legion Racing</h1>
+        <p class="cabecera__subtitulo">Oportunidades de Patrocinio B2B</p>
+    </div>
     <nav class="cabecera__nav">
         <ul class="cabecera__menu">
-            <li>
-                <a class="cabecera__menu__opcion" href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="el-coche.html">El Coche</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="el-equipo.html">Equipo</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="noticias.html">Noticias</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="patrocinio.html">Patrocinio</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="calendario.html">Calendario</a>
-            </li>
+            <li><a class="cabecera__menu__opcion" href="index.html">Inicio</a></li>
+            <li><a class="cabecera__menu__opcion" href="el-coche.html">El Coche</a></li>
+            <li><a class="cabecera__menu__opcion" href="el-equipo.html">Equipo</a></li>
+            <li><a class="cabecera__menu__opcion" href="noticias.html">Noticias</a></li>
+            <li><a class="cabecera__menu__opcion" href="patrocinio.html">Patrocinio</a></li>
+            <li><a class="cabecera__menu__opcion" href="calendario.html">Calendario</a></li>
         </ul>
     </nav>
-    <h1 class="cabecera__titulo">Oportunidades de Patrocinio con KOI Legion Racing</h1>
-    <p>Explora nuestras oportunidades de patrocinio B2B y únete a la élite de la competición.</p>
 </header>
 
-<main>
-    <section>
-        <h2>Únete a la parrilla con KOI Legion Racing</h2>
+<main class="cuerpo-patrocinio">
+    <section class="cuerpo__seccion__patrocinio intro-patrocinio">
+        <h2 class="seccion__titulo">Únete a la parrilla con KOI Legion Racing</h2>
         <p>
             Asociarte con KOI Legion Racing sitúa a tu marca en el epicentro de la innovación,
             la velocidad y la competición de élite. Ofrecemos una plataforma B2B
@@ -52,27 +42,27 @@
             fundamental de nuestra búsqueda de la victoria.
         </p>
     </section>
-    <section>
-        <h2>Formulario de Solicitud de Patrocinio</h2>
-        <form>
-            <fieldset>
-                <legend>Información de la Empresa</legend>
 
-                <label> Nombre de la Empresa:
-                    <input type="text" name="nombre_empresa" required>
+    <section class="cuerpo__seccion__patrocinio seccion-formulario">
+        <h2 class="seccion__titulo">Formulario de Solicitud de Patrocinio</h2>
+        <form class="formulario__patrocinio">
+            <fieldset class="elementos__formulario">
+                <legend class="formulario__titulo">Información de la Empresa</legend>
+
+                <label class="etiqueta__formulario"> Nombre de la Empresa:
+                    <input class="entrada__formulario" type="text" name="nombre_empresa" required>
                 </label>
-                <br> <label> Persona de Contacto:
-                <input type="text" name="persona_contacto" required>
-            </label>
-                <br>
 
-                <label> Email Corporativo:
-                    <input type="email" name="email_corporativo" required>
+                <label class="etiqueta__formulario"> Persona de Contacto:
+                    <input class="entrada__formulario" type="text" name="persona_contacto" required>
                 </label>
-                <br>
 
-                <label> Sector de la Empresa:
-                    <input type="text" name="sector" list="sectores-empresa">
+                <label class="etiqueta__formulario"> Email Corporativo:
+                    <input class="entrada__formulario" type="email" name="email_corporativo" required>
+                </label>
+
+                <label class="etiqueta__formulario"> Sector de la Empresa:
+                    <input class="entrada__formulario" type="text" name="sector" list="sectores-empresa">
                 </label>
 
                 <datalist id="sectores-empresa">
@@ -85,30 +75,28 @@
                 </datalist>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="elementos__formulario">
                 <legend>Detalles del Interés</legend>
 
-                <label> Nivel de patrocinio interesado:
-                    <select name="nivel_patrocinio">
+                <label class="etiqueta__formulario"> Nivel de patrocinio interesado:
+                    <select class="entrada__formulario select-form" name="nivel_patrocinio">
                         <option value="socio_principal">Socio Principal</option>
                         <option value="socio_tecnico">Socio Técnico</option>
                         <option value="proveedor_oficial">Proveedor Oficial</option>
                     </select>
                 </label>
-                <br>
 
-                <label> Presupuesto anual aproximado (EUR):
-                    <input type="number" name="presupuesto_anual" min="10000" placeholder="Ej: 50000">
+                <label class="etiqueta__formulario"> Presupuesto anual aproximado (EUR):
+                    <input class="entrada__formulario" type="number" name="presupuesto_anual" min="10000"
+                           placeholder="Ej: 50000">
                 </label>
-                <br>
 
-                <fieldset>
+                <fieldset class="entrada_opciones">
                     <legend>¿Has patrocinado a otros equipos?</legend>
                     <label>
                         <input type="radio" name="patro_previo" value="si">
                         Sí
                     </label>
-                    <br>
                     <label>
                         <input type="radio" name="patro_previo" value="no" checked>
                         No
@@ -116,46 +104,45 @@
                 </fieldset>
             </fieldset>
 
-            <button type="submit">
+            <button class="boton-primario" type="submit">
                 Enviar Solicitud de Patrocinio
             </button>
         </form>
     </section>
-    <section>
-        <h2>Kit de Prensa</h2>
+
+    <section class="cuerpo__seccion__patrocinio kit-prensa">
+        <h2 class="seccion__titulo">Kit de Prensa</h2>
         <p>
             Descarga nuestro dossier B2B completo para explorar en detalle
             las métricas de audiencia, opciones de activación y
             casos de éxito de nuestros socios actuales.
         </p>
-        <p>
-            <a href="/media/KOI_Racing_B2B_KitPrensa.pdf" download="KOI_Racing_Kit_de_Prensa_2025.pdf">
+        <p class="contenedor-boton">
+            <a class="boton-descarga" href="/media/KOI_Racing_B2B_KitPrensa.pdf"
+               download="KOI_Racing_Kit_de_Prensa_2025.pdf">
                 Descargar Dossier de Patrocinio (PDF)
             </a>
         </p>
     </section>
 </main>
 
-<footer>
+<footer class="footer">
     <section>
-        <h4>KOI Legion Racing</h4>
+        <h4 class="footer__titulo">KOI Legion Racing</h4>
         <p>© KOI Legion Racing.</p>
     </section>
     <section>
-        <h4>Enlaces útiles</h4>
-    </section>
-    <section>
-        <h4>Síguenos</h4>
+        <h4 class="footer__titulo">Síguenos</h4>
         <ul>
-            <li><a href="https://facebook.com/KOILegionRacing">Facebook</a></li>
-            <li><a href="https://twitter.com/KOILegionRacing">Twitter</a></li>
-            <li><a href="https://instagram.com/KOILegionRacing">Instagram</a></li>
-            <li><a href="https://youtube.com/KOILegionRacing">YouTube</a></li>
+            <li><a class="footer__enlace" href="https://facebook.com/KOILegionRacing">Facebook</a></li>
+            <li><a class="footer__enlace" href="https://twitter.com/KOILegionRacing">Twitter</a></li>
+            <li><a class="footer__enlace" href="https://instagram.com/KOILegionRacing">Instagram</a></li>
+            <li><a class="footer__enlace" href="https://youtube.com/KOILegionRacing">YouTube</a></li>
         </ul>
     </section>
     <section>
-        <h4>Contacto</h4>
-        <p>Email: <a href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
+        <h4 class="footer__titulo">Contacto</h4>
+        <p>Email: <a class="footer__enlace" href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
         <p>Teléfono: +34 123 456 789</p>
     </section>
 </footer>

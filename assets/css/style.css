@@ -414,3 +414,108 @@ ul {
         width: 100%;
     }
 }
+
+/* --- PATROCINIO --- */
+
+.cuerpo-patrocinio {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.cuerpo__seccion__patrocinio {
+    background-color: var(--color-terciario);
+    width: 100%;
+    max-width: 80ch;
+    padding: 2.5rem;
+    border-radius: 12px;
+    color: var(--color-blanco);
+}
+
+.formulario__patrocinio {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.elementos__formulario {
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-terciario);
+}
+
+.formulario__titulo {
+    color: var(--color-enlaces);
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.etiqueta__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1.2rem;
+    font-weight: 500;
+    color: var(--color-blanco);
+}
+
+.entrada__formulario {
+    background-color: var(--color-secundario);
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 0.8rem;
+    color: var(--color-texto);
+}
+
+.entrada__formulario:focus {
+    outline: none;
+    border-color: var(--color-enlaces);
+    background-color: var(--color-primario);
+}
+
+.entrada_opciones {
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.boton-primario {
+    background-color: var(--color-enlaces);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-primario:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-enlaces);
+    transform: translateY(-2px);
+}
+
+.contenedor-boton {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.boton-descarga {
+    border: 2px solid var(--color-enlaces);
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.boton-descarga:hover {
+    background-color: var(--color-enlaces);
+    color: var(--color-blanco);
+}
