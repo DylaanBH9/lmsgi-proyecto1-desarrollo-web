@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* variables */
+:root {
+    --color-primario: #1A1A1A;
+    --color-secundario: #252525;
+    --color-terciario: #333333;
+    --color-enlaces: #F25800;
+    --color-texto: #F5F5F5;
+    --color-negro: #03071e;
+    --color-blanco: #ffffff;
+}
+
+/* reseteo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- ESTILOS GENERALES Y LAYOUT --- */
+.cabecera {
+    background: var(--color-secundario);
+    color: var(--color-texto);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecera__logo {
+    width: 10rem;
+}
+
+.cabecera__titulo {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.cabecera__subtitulo {
+    width: 100%;
+}
+
+.cabecera__nav {
+    width: auto;
+}
+
+@media (max-width: 1400px) {
+    .cabecera__nav {
+        width: 100%;
+    }
+}
+
+.cabecera__menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecera__menu__opcion {
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.cabecera__menu__opcion:hover,
+.footer__enlace:hover,
+.enlace-titulo:hover,
+.boton-noticia:hover {
+    color: var(--color-enlaces);
+    transition: 0.5s;
+}
+
+.footer {
+    background: var(--color-secundario);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-texto);
+    flex-wrap: wrap;
+}
+
+.footer__titulo {
+    color: var(--color-enlaces);
+}
+
+.footer__enlace {
+    font-size: 0.9rem;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+/* --- ESTILOS DEL CUERPO (MAIN) --- */
+.cuerpo {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.cuerpo__fecha {
+    color: var(--color-enlaces);
+}
+
+.cuerpo__seccion,
+.cuerpo__seccion1,
+.cuerpo__seccion2,
+.cuerpo__seccion3 {
+    background-color: var(--color-terciario);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cuerpo__seccion {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.cuerpo__seccion1 {
+    width: 60%;
+    text-align: center;
+}
+
+.cuerpo__seccion2 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cuerpo__seccion3 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.seccion__titulo {
+    width: 100%;
+    color: var(--color-enlaces);
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.cuerpo__seccion1 .seccion__titulo {
+    text-align: center;
+}
+
+.seccion__subtitulo {
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.enlace-titulo {
+    text-decoration: none;
+    color: var(--color-blanco);
+    transition: 0.5s;
+}
+
+/* --- IMÁGENES Y CONTENIDO --- */
+.img-responsive {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding-bottom: 0.5rem;
+}
+
+/* --- NOTICIAS (INDEX) --- */
+.cuerpo__seccion2__noticia {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cuerpo__seccion2__contenido figcaption p:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.boton-noticia {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-enlaces);
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+
+}
+
+.boton-noticia:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-enlaces);
+    transform: translateY(-2px);
+}
+
+/* --- PILOTOS (INDEX) --- */
+.cuerpo__seccion3__contenido {
+    width: 45%;
+}
+
+.cuerpo__seccion3__texto {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+/* --- TABLAS Y GALERÍA (EL COCHE) --- */
+.coche__tabla,
+.coche__articulo {
+    width: 90%;
+}
+
+.coche__tabla {
+    border-collapse: collapse;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.coche__tabla__titulo {
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.coche__tabla__cabecera {
+    background-color: var(--color-enlaces);
+    color: var(--color-blanco);
+}
+
+.coche__tabla__cabecera th,
+.coche__tabla__cuerpo td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-primario);
+}
+
+.coche__tabla__cuerpo tr:hover {
+    background-color: var(--color-primario);
+    transition: 0.3s;
+}
+
+.coche__galeria__articulo {
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cuerpo__seccion2__noticia,
+    .cuerpo__seccion3__contenido {
+        width: 100%;
+        border-bottom: 1px solid var(--color-secundario);
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+
+
+}
