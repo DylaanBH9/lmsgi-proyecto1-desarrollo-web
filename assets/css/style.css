@@ -98,7 +98,7 @@ ul {
     text-decoration: none;
 }
 
-/* --- ESTILOS DEL CUERPO (MAIN) --- */
+/* --- ESTILOS DEL CUERPO (GENERAL)--- */
 .cuerpo {
     background-color: var(--color-primario);
     color: var(--color-texto);
@@ -271,6 +271,75 @@ ul {
     gap: 0.5rem;
 }
 
+/* --- HISTORIA (EL-COCHE) --- */
+.historia {
+    background: var(--color-secundario);
+    padding: 2.25rem;
+    border-radius: 12px;
+    border-left: 6px solid rgba(242, 88, 0, 0.12);
+    transition: 0.25s;
+}
+
+.historia:hover {
+    transform: translateY(-6px);
+}
+
+.historia__texto {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 80ch;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* --- LISTA VALORES (EL-COCHE) --- */
+
+.valores__lista {
+    counter-reset: valor;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.valor__elemento {
+    padding: 1rem 3.25rem;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+    transition: 0.18s;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.valor__elemento::before {
+    content: counter(valor);
+    counter-increment: valor;
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--color-enlaces);
+    color: var(--color-blanco);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.valor__elemento:hover {
+    transform: translateY(-6px);
+}
+
+@media (max-width: 1150px) {
+    .valores__lista {
+        flex-wrap: wrap;
+    }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .cuerpo__seccion2__noticia,
@@ -281,5 +350,7 @@ ul {
         padding-top: 1rem;
     }
 
-
+    .cuerpo__seccion1 {
+        width: 100%;
+    }
 }
