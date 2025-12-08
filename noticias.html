@@ -4,71 +4,62 @@
     <meta charset="UTF-8">
     <title>Noticias — KOI Legion Racing</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="cabecera">
     <a href="index.html">
         <img class="cabecera__logo" src="assets/img/logo.webp" alt="Logo de KOI Legion Racing">
     </a>
-    <h1>KOI Legion Racing</h1>
+    <h1 class="cabecera__titulo">KOI Legion Racing</h1>
     <nav class="cabecera__nav">
         <ul class="cabecera__menu">
-            <li>
-                <a class="cabecera__menu__opcion" href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="el-coche.html">El Coche</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="el-equipo.html">Equipo</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="noticias.html">Noticias</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="patrocinio.html">Patrocinio</a>
-            </li>
-            <li>
-                <a class="cabecera__menu__opcion" href="calendario.html">Calendario</a>
-            </li>
+            <li><a class="cabecera__menu__opcion" href="index.html">Inicio</a></li>
+            <li><a class="cabecera__menu__opcion" href="el-coche.html">El Coche</a></li>
+            <li><a class="cabecera__menu__opcion" href="el-equipo.html">Equipo</a></li>
+            <li><a class="cabecera__menu__opcion" href="noticias.html">Noticias</a></li>
+            <li><a class="cabecera__menu__opcion" href="patrocinio.html">Patrocinio</a></li>
+            <li><a class="cabecera__menu__opcion" href="calendario.html">Calendario</a></li>
         </ul>
     </nav>
-    <h1 class="cabecera__titulo">Noticias</h1>
+    <h1 class="cabecera__subtitulo">Noticias</h1>
     <p>Descubre las últimas novedades del equipo KOI Legion Racing.</p>
 </header>
 
-<main>
-    <section>
-        <h2>Comunicados de Prensa</h2>
-        <article>
-            <h3>Anuncio del nuevo patrocinador principal</h3>
+<main class="cuerpo">
+    <section class="cuerpo__seccion__noticia">
+        <h2 class="seccion__titulo">Comunicados de Prensa</h2>
+
+        <article class="noticia">
+            <h3 class="noticia__titulo">Anuncio del nuevo patrocinador principal</h3>
             <p>KOI Legion Racing se enorgullece de anunciar a Nexus Technologies como nuestro nuevo patrocinador
                 principal. Este acuerdo refuerza nuestro compromiso con la innovación en el automovilismo.</p>
             <p>
-                <time datetime="2025-10-01">1 de Octubre de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-10-01">1 de Octubre de 2025</time>
             </p>
         </article>
 
-        <article>
-            <h3>El equipo anuncia mejoras clave para el coche</h3>
+        <article class="noticia">
+            <h3 class="noticia__titulo">El equipo anuncia mejoras clave para el coche</h3>
             <p>El departamento de ingeniería trabaja en nuevas mejoras aerodinámicas. Sin tiempo para descansar, el
                 departamento de ingeniería ya trabaja en un nuevo paquete aerodinámico que se estrenará en la próxima
                 carrera. El objetivo es claro: mejorar el rendimiento en curvas rápidas y seguir luchando por las
                 primeras posiciones.</p>
             <p>
-                <time datetime="2025-10-19">19 de Octubre de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-10-19">19 de Octubre de 2025</time>
             </p>
         </article>
     </section>
 
-    <section>
-        <h2>Crónicas de Carrera</h2>
-        <article>
-            <h3>Gran Premio de Monza: Un podio inolvidable</h3>
+    <section class="cuerpo__seccion__noticia">
+        <h2 class="seccion__titulo">Crónicas de Carrera</h2>
+        <article class="noticia">
+            <h3 class="noticia__titulo">Gran Premio de Monza: Un podio inolvidable</h3>
             <p>¡El Templo de la Velocidad es nuestro! Lucas Fernández aseguró un increíble tercer puesto en el
                 desafiante circuito de Monza, Italia, tras una clase magistral de defensa y velocidad punta.</p>
-            <details>
-                <summary>Más detalles sobre la carrera</summary>
+
+            <details class="noticia__detalles">
+                <summary class="noticia__resumen">Más detalles sobre la carrera</summary>
                 <p>El Gran Premio de Monza fue una prueba de nervios, estrategia y precisión milimétrica. En un
                     circuito donde los rebufos son clave, Lucas Fernández mostró un excelente manejo en las
                     frenadas de las chicanes y una gestión inteligente de la energía, asegurando un lugar en el
@@ -94,17 +85,17 @@
                     de todos los miembros de KOI Legion Racing.</p>
             </details>
             <p>
-                <time datetime="2025-05-28">28 de Mayo de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-05-28">28 de Mayo de 2025</time>
             </p>
         </article>
 
-        <article>
-            <h3>Gran Premio de Silverstone: Impresionante remontada</h3>
+        <article class="noticia">
+            <h3 class="noticia__titulo">Gran Premio de Silverstone: Impresionante remontada</h3>
             <p>Emma Johnson protagonizó una remontada espectacular en el Gran Premio de Gran Bretaña. Saliendo
                 desde la décima posición, finalizó en un increíble cuarto lugar gracias a una gestión de
                 neumáticos impecable y adelantamientos valientes.</p>
-            <details>
-                <summary>Más detalles sobre la carrera</summary>
+            <details class="noticia__detalles">
+                <summary class="noticia__resumen">Más detalles sobre la carrera</summary>
                 <p>
                     En el exigente asfalto británico de Silverstone, Emma Johnson demostró su habilidad para
                     mantener la calma bajo presión. Ejecutó una estrategia agresiva de "undercut" (parar antes
@@ -132,78 +123,78 @@
                     luchar por los primeros puestos de forma consistente.</p>
             </details>
             <p>
-                <time datetime="2025-07-16">16 de Julio de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-07-16">16 de Julio de 2025</time>
             </p>
         </article>
     </section>
 
-    <section>
-        <h2>Detrás de las cámaras</h2>
-        <article>
-            <h3>Victoria en el Circuito de Silverstone</h3>
+    <section class="cuerpo__seccion__noticia">
+        <h2 class="seccion__titulo">Detrás de las cámaras</h2>
+        <article class="noticia">
+            <h3 class="noticia__titulo">Victoria en el Circuito de Silverstone</h3>
             <p>El equipo celebra un tercer puesto en el desafiante Circuito de Silverstone. En una carrera para el
                 recuerdo, KOI Legion Racing ha conseguido un increíble tercer puesto en el desafiante Circuito de
                 Montecarlo. Gracias a una estrategia impecable y una conducción magistral, el equipo sube al podio y
                 suma puntos vitales para el campeonato.</p>
             <p>
-                <time datetime="2025-10-15">15 de Octubre de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-10-15">15 de Octubre de 2025</time>
             </p>
         </article>
     </section>
 
-    <section>
-        <h2>Detrás de las Cámaras</h2>
-        <article>
-            <h3>Momentos de equipo en el paddock</h3>
+    <section class="cuerpo__seccion__noticia">
+        <h2 class="seccion__titulo">Detrás de las Cámaras</h2>
+        <article class="noticia">
+            <h3 class="noticia__titulo">Momentos de equipo en el paddock</h3>
             <p>El paddock es el corazón del equipo durante cada fin de semana de carreras.</p>
             <p>
-                <time datetime="2025-10-21">21 de Octubre de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-10-21">21 de Octubre de 2025</time>
             </p>
         </article>
 
-        <article>
-            <h3>"La afición es nuestro motor": declaraciones del piloto</h3>
+        <article class="noticia">
+            <h3 class="noticia__titulo">"La afición es nuestro motor": declaraciones del piloto</h3>
             <p>El piloto principal agradece a los fans tras el éxito en Silverstone. Tras el éxito en Silverstone,
                 nuestro piloto principal ha querido agradecer el apoyo incondicional de los fans.</p>
 
-            <blockquote>
+            <blockquote class="noticia__cita">
                 <p>"Sentimos vuestra energía en cada vuelta. Este podio también es vuestro"</p>
             </blockquote>
 
             <p>Declaró en una entrevista exclusiva para nuestra web.</p>
             <p>
-                <time datetime="2025-10-21">21 de Octubre de 2025</time>
+                <time class="cuerpo__fecha" datetime="2025-10-21">21 de Octubre de 2025</time>
             </p>
         </article>
     </section>
 </main>
 
-<footer>
+<footer class="footer">
     <section>
-        <h4>KOI Legion Racing</h4>
+        <h4 class="footer__titulo">KOI Legion Racing</h4>
         <p>© KOI Legion Racing.</p>
     </section>
     <section>
-        <h4>Enlaces útiles</h4>
+        <h4 class="footer__titulo">Enlaces útiles</h4>
         <ul>
-            <li><a href="terminos.html">Términos y Condiciones</a></li>
-            <li><a href="privacidad.html">Política de Privacidad</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a class="footer__enlace" href="terminos.html">Términos y Condiciones</a></li>
+            <li><a class="footer__enlace" href="privacidad.html">Política de Privacidad</a></li>
+            <li><a class="footer__enlace" href="contacto.html">Contacto</a></li>
+            <li><a class="footer__enlace" href="faq.html">Preguntas Frecuentes</a></li>
         </ul>
     </section>
     <section>
-        <h4>Síguenos</h4>
+        <h4 class="footer__titulo">Síguenos</h4>
         <ul>
-            <li><a href="https://facebook.com/KOILegionRacing">Facebook</a></li>
-            <li><a href="https://twitter.com/KOILegionRacing">Twitter</a></li>
-            <li><a href="https://instagram.com/KOILegionRacing">Instagram</a></li>
-            <li><a href="https://youtube.com/KOILegionRacing">YouTube</a></li>
+            <li><a class="footer__enlace" href="https://facebook.com/KOILegionRacing">Facebook</a></li>
+            <li><a class="footer__enlace" href="https://twitter.com/KOILegionRacing">Twitter</a></li>
+            <li><a class="footer__enlace" href="https://instagram.com/KOILegionRacing">Instagram</a></li>
+            <li><a class="footer__enlace" href="https://youtube.com/KOILegionRacing">YouTube</a></li>
         </ul>
     </section>
     <section>
-        <h4>Contacto</h4>
-        <p>Email: <a href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
+        <h4 class="footer__titulo">Contacto</h4>
+        <p>Email: <a class="footer__enlace" href="mailto:info@koilegionracing.com">info@koilegionracing.com</a></p>
         <p>Teléfono: +34 123 456 789</p>
     </section>
 </footer>

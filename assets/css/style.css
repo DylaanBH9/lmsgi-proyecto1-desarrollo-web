@@ -225,8 +225,7 @@ ul {
 }
 
 /* --- TABLAS Y GALERÍA (EL COCHE) --- */
-.coche__tabla,
-.coche__articulo {
+.coche__tabla {
     width: 90%;
 }
 
@@ -292,7 +291,7 @@ ul {
     text-align: left;
 }
 
-/* --- LISTA VALORES (EL-COCHE) --- */
+/* --- VALORES (EL-COCHE) --- */
 
 .valores__lista {
     counter-reset: valor;
@@ -306,7 +305,7 @@ ul {
     padding: 1rem 3.25rem;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 6px 14px var(--color-negro);
     transition: 0.18s;
     display: flex;
     gap: 1.5rem;
@@ -334,13 +333,76 @@ ul {
     transform: translateY(-6px);
 }
 
+/* --- NOTICIAS --- */
+.cuerpo__seccion__noticia {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-terciario);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 80ch;
+}
+
+.noticia:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.noticia__titulo {
+    color: var(--color-blanco);
+    font-size: 1.3rem;
+}
+
+.noticia__detalles {
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1rem;
+}
+
+.noticia__resumen {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-enlaces);
+    padding-bottom: 0.5rem;
+}
+
+.noticia__detalles ul,
+.noticia__detalles ol {
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.noticia__cita {
+    border-left: 4px solid var(--color-enlaces);
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+
+/* RESPONSIVE */
+
 @media (max-width: 1150px) {
     .valores__lista {
         flex-wrap: wrap;
     }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .cuerpo__seccion2__noticia,
     .cuerpo__seccion3__contenido {
